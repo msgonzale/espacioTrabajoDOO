@@ -19,13 +19,14 @@ public final class UUIDHelper {
 	}
 
 	public static final String getDefaultAsString() {
-		
-		return (DEFAULT_UUID_STRING);
+		return DEFAULT_UUID_STRING;
+	}
+	
+	public static final UUID getDefault() {
+		return convertToUUID(DEFAULT_UUID_STRING);
 	}
 
-	public static final String getDefault() {
-		return (DEFAULT_UUID_STRING);
-	}
+	
 	public static final UUID generate() {
 		return UUID.randomUUID();
 	}
